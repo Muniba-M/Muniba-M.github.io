@@ -6,154 +6,153 @@
   <title>Birdwatching</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300%7CCinzel+Decorative:700" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-
-      <!--
-  Name: Muniba Maududi
-  File: Assignment1_Part2.html
-  Date: 17 January 2025
-  Desc: Lab 1 Part 2 Structuring a page content
-  -->
-
-    <style>    
-      html, body {
-          margin: 0;
-          padding: 0;
-      }
+    <!--
+    Name: Muniba Maududi
+    File: Assignment1_Part2.html
+    Date: 17 January 2025
+    Desc: Lab 1 Part 2 Structuring a page content
+    -->
+    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
           
-      html {
-          font-size: 10px;
-          background-color: #a9a9a9;
-      }
+    html {
+      font-size: 10px;
+      background-color: #a9a9a9;
+    }
       
-      body {
-          width: 70%;
-          min-width: 800px;
-          margin: auto;
-      }
+    body {
+      width: 70%;
+      min-width: 800px;
+      margin: auto;
+    }
       
-      body > * {
-        background-color:rgba(0,255,0,0.5);
-        padding: 1%;
-      }
+    body > * {
+      background-color:rgba(0,255,0,0.5);
+      padding: 1%;
+    }
       
-      h1, h2, h3 {
-          font-family: 'Cinzel Decorative', cursive;
-          color: #2a2a2a;
-      }
+    h1, h2, h3 {
+      font-family: 'Cinzel Decorative', cursive;
+      color: #2a2a2a;
+    }
       
-      h1 {
-          font-size: 4rem;
-          text-align: center;
-          text-shadow: 2px 2px 10px black;
-          text-transform: uppercase;
-          flex: 5;
-      }
+    h1 {
+      font-size: 4rem;
+      text-align: center;
+      text-shadow: 2px 2px 10px black;
+      text-transform: uppercase;
+      flex: 5;
+    }
       
-      h2 {
-          font-size: 3rem;
-          text-align: center;
-          text-transform: uppercase;
-      }
+    h2 {
+      font-size: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
       
-      h3 {
-          font-size: 3rem;
-          text-align: center;
-      }
+    h3 {
+      font-size: 3rem;
+      text-align: center;
+    }
       
-      p, li {
-          font-size: 1.9rem;
-          line-height: 1.5;
-          font-family: 'Roboto Condensed', sans-serif;
-          color: #2a2a2a;
-      }
+    p, li {
+      font-size: 1.9rem;
+      line-height: 1.5;
+      font-family: 'Roboto Condensed', sans-serif;
+      color: #2a2a2a;
+    }
       
-      header {
-        flex-flow: row wrap;
-        display: flex;
-        margin-bottom: 10px;
-        background-color:rgba(0,255,0,0.5);
-        padding: 1%;
-      }
+    header {
+      flex-flow: row wrap;
+      display: flex;
+      margin-bottom: 10px;
+      background-color:rgba(0,255,0,0.5);
+      padding: 1%;
+    }
       
-      header img {
-        display: block;
-        height: 60px;
-        padding-top: 20.15px;
-      }
+    header img {
+      display: block;
+      height: 60px;
+      padding-top: 20.15px;
+    }
       
-      nav {
-        height: 50px;
-        flex: 100%;
-        display: flex;
-        justify-content: center;
-        background-color: rgba(45, 223, 14, 0.8);
-        padding: 1px;
-      }
+    nav {
+      height: 50px;
+      flex: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: rgba(45, 223, 14, 0.8);
+      padding: 1px;
+    }
       
-      nav ul {
-        padding: 0;
-        list-style-type: none;
-        gap: 120px;
-        display: flex;
-      }
+    nav ul {
+      padding: 0;
+      list-style-type: none;
+      gap: 120px;
+      display: flex;
+    }
       
-      nav li {
-        display: inline;
-        text-align: center;
-        margin-top: -1%;
-      }
+    nav li {
+      display: inline;
+      text-align: center;
+      margin-top: -1%;
+    }
       
-      nav a, nav span {
-        display: inline-block;
-        font-size: 1rem;
-        padding: 1px;
-        height: 3rem;
-        line-height: 1.7;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: black;
-      }
+    nav a, nav span {
+      display: inline-block;
+      font-size: 1rem;
+      padding: 1px;
+      height: 3rem;
+      line-height: 1.7;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: black;
+    }
       
-      main {
-        display: flex;
-        flex: 10;
-        gap: 10px;
-        background-color:rgba(0, 255, 0, 0.5);
-      }
+    main {
+      display: flex;
+      flex: 10;
+      gap: 10px;
+      background-color:rgba(0, 255, 0, 0.5);
+    }
       
-      article, section {
-        flex: 2;
-        background-color: rgba(45, 223, 14, 0.8);
-        padding: 1%;
-      }
+    article, section {
+      flex: 2;
+      background-color: rgba(45, 223, 14, 0.8);
+      padding: 1%;
+    }
       
-      aside {
-        flex: 1;
-        background-color: rgba(45, 223, 14, 0.8);
-        padding: 1%;
-      }
+    aside {
+      flex: 1;
+      background-color: rgba(45, 223, 14, 0.8);
+      padding: 1%;
+    }
       
-      aside img {
-        max-width: 50%;
-        margin-bottom: 5px;
-      }
+    aside img {
+      max-width: 50%;
+      margin-bottom: 5px;
+    }
       
-      aside .photo-container {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-      }
+    aside .photo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
       
-      footer {
-        margin-top: 10px;
-        text-align: left;
-        background-color:rgba(0,255,0,0.5);
-        color: black;
-        padding: 1%;
-        font-size: 1.4rem;
-      }
-      </style>
-      </head>
+    }
+      
+    footer {
+      margin-top: 10px;
+      text-align: left;
+      background-color:rgba(0,255,0,0.5);
+      color: black;
+      padding: 1%;
+      font-size: 1.4rem;
+    }
+    </style>
+</head>
 
 <body>
 <header>
