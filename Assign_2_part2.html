@@ -5,19 +5,34 @@
     <meta name="viewport" content="width=device-width">
     <title>Planet data</title>
     <link href="minimal-table.css" rel="stylesheet" type="text/css">
+    <!--
+    Name: Muniba Maududi
+    File: Assignment2_Part2.html
+    Date: 4 February 2025
+    Desc: Lab 2 Part 2 Structuring a planet data table
+    -->
   </head>
   <body>
     <h1>Planet data</h1>
+    
+    <!--Table starts here-->
     <table>
+
+        <!-- Define column styling: the third column (planet names) has a black border -->
         <colgroup>
             <col span="2">
             <col style="border: 3px solid black;">
-          </colgroup>
+        </colgroup>
+
+        <!-- Table caption providing context -->
         <caption>
             Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
         </caption>
+
+         <!-- Table header -->
         <thead>
             <tr>
+                <!-- Empty first two cells for alignment with row group headers -->
                 <td colspan="2"></td>
                 <th scope="col">Name</th>
                 <th scope="col">Mass (10<sup>24</sup>kg)</th>
@@ -31,6 +46,7 @@
                 <th scope="col">Notes</th>
             </tr>
             <tbody>
+                <!-- Terrestrial planets section -->
                 <tr>
                     <th scope="rowgroup" rowspan="4" colspan="2">Terrestrial planets</th>
                     <th scope="row">Mercury</th>
@@ -83,6 +99,8 @@
                     <td>2</td>
                     <td>The red planet</td>
                 </tr>
+
+                <!-- Jovian planets section -->
                 <tr>
                     <th scope="rowgroup" rowspan="4">Jovian planets</th>
                     <th scope="rowgroup" rowspan="2">Gas giants</th>
@@ -137,7 +155,8 @@
                     <td>14</td>
                     <td></td>
                 </tr>
-        
+
+                <!-- Dwarf planets section -->
                 <tr>
                     <th scope="rowgroup" colspan="2">Dwarf planets</th>
                     <th scope="row">Pluto</th>
@@ -151,6 +170,7 @@
                     <td>5</td> 
                     <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
                 </tr>
+            
         </thead>
     </table>
   </body>
