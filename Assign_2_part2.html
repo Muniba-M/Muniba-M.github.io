@@ -17,16 +17,17 @@
     
     <!--Table starts here-->
     <table>
-        <!-- Table caption providing context -->
-        <caption>
-            Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
-        </caption>
 
         <!-- Define column styling: the third column (planet names) has a black border -->
         <colgroup>
             <col span="2">
             <col style="border: 3px solid black;">
         </colgroup>
+        
+        <!-- Table caption providing context -->
+        <caption>
+            Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).
+        </caption>
 
          <!-- Table header -->
         <thead>
@@ -44,6 +45,8 @@
                 <th scope="col">Number of moons</th>
                 <th scope="col">Notes</th>
             </tr>
+        </thead>
+
             <tbody>
                 <!-- Terrestrial planets section -->
                 <tr>
@@ -170,7 +173,6 @@
                     <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
                 </tr>
             </tbody>
-        </thead>
     </table>
   </body>
 </html>
