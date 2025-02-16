@@ -12,7 +12,12 @@ div {
   color: white;
   text-shadow: 1px 1px 1px black;
   background-color: red;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
   border-radius: 10px;
   border: 1px solid #990000;
-  
 }
