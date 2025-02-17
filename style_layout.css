@@ -63,12 +63,13 @@ nav {
   top: 0;
 }
 
-/* selector that includes float: left and margins set */
+/* article img includes float: left and margin */
 article img {
   float: left;
   margin: 20px;
 }
 
+/* displaying aside and article selectors in a two-column layout/grid */
 .grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -78,5 +79,7 @@ article img {
 .photos {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  
+  /* using 1px gap between images */
   gap: 1px;
 }
