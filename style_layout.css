@@ -51,17 +51,19 @@ nav a {
 }
 
 /* My CSS is here */
+/*flexbox and justify-content for links in the nav section */
 nav ul{
   display: flex;
   justify-content: space-between;
 }
 
 nav {
-  /* static then relative to make a sticky nav bar */
+  /* make a sticky nav bar */
   position: sticky;
   top: 0;
 }
 
+/* selector that includes float: left and margins set */
 article img {
   float: left;
   margin: 20px;
