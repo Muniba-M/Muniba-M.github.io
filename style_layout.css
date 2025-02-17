@@ -9,7 +9,8 @@ img {
     max-width: 100%;
     display: block;
     float: left;
-    
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .logo {
