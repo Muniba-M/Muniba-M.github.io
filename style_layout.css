@@ -9,8 +9,7 @@ img {
     max-width: 100%;
     display: block;
     float: left;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
 }
 
 .logo {
@@ -24,6 +23,7 @@ img {
   margin: 0 auto;
   padding: 0 20px;
   max-width: 980px;
+  
 }
 
 nav {
@@ -55,6 +55,10 @@ nav a {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: grid;
+  gap: 1px;
+  grid-gap: 1px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .feature {
