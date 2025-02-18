@@ -43,3 +43,25 @@ header, footer {
 }
 
 /* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: "JosefinSlab-Bold";
+  src: url("fonts/JosefinSlab-Bold.ttf"), format("truetype");
+  font-weight: bold;
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "Cormorant-Regular";
+  src: url("fonts/Cormorant-Regular.otf"), format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Cormorant-Regular", serif;
+}
+
+h1, h2 {
+  font-family: "JosefinSlab-Bold", sans-serif;
+}
