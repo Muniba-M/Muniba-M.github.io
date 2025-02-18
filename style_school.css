@@ -46,14 +46,18 @@ header, footer {
 
 @font-face {
   font-family: "JosefinSlab-Bold";
-  src: url("fonts/JosefinSlab-Bold.ttf"), format("truetype");
+  src: url("fonts/JosefinSlab-Bold.ttf"), format("truetype"),
+       url("fonts/JosefinSlab-Bold.woff"), format("woff"),
+       url("fonts/JosefinSlab-Bold.woff2"), format("woff2");
   font-weight: bold;
-  font-style: bold;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "Tulia-Regular";
-  src: url("fonts/Tulia_regular.otf"), format("opentype");
+  src: url("fonts/Tulia_regular.otf"), format("opentype"),
+       url("fonts/Tulia_regular.woff"), format("woff"),
+       url("fonts/Tulia_regular.woff2"), format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -125,8 +129,9 @@ a:hover {
 }
 
 a:active {
-  color: red;
-  padding: 2px 4px;
+  color: white;
+  background-color: #a66;
+  padding: 2px;
 }
 
 a[href*="http"] {
@@ -168,4 +173,9 @@ nav li a {
 nav li a:hover {
   background-color: #a66;
   color: white;
+}
+
+nav li a:active {
+  color: white;
+  padding: 2px;
 }
