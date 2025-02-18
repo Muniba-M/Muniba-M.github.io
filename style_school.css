@@ -44,119 +44,140 @@ header, footer {
 
 /* WRITE YOUR CODE BELOW HERE */
 
+/* Define the bold Josefin Slab font using @font-face */
 @font-face {
   font-family: "JosefinSlab-Bold";
-  src: url("fonts/JosefinSlab-Bold.ttf"), format("truetype"),
-       url("fonts/JosefinSlab-Bold.woff"), format("woff"),
-       url("fonts/JosefinSlab-Bold.woff2"), format("woff2");
+  src: url("fonts/JosefinSlab-Bold.ttf") format("truetype"),
+       url("fonts/JosefinSlab-Bold.woff") format("woff"),
+       url("fonts/JosefinSlab-Bold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 
+/* Define the regular Tulia font using @font-face */
 @font-face {
   font-family: "Tulia-Regular";
-  src: url("fonts/Tulia_regular.otf"), format("opentype"),
-       url("fonts/Tulia_regular.woff"), format("woff"),
-       url("fonts/Tulia_regular.woff2"), format("woff2");
+  src: url("fonts/Tulia_regular.otf") format("opentype"),
+       url("fonts/Tulia_regular.woff") format("woff"),
+       url("fonts/Tulia_regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 
+/* Set a base font size and apply the default font for the entire document */
 html {
-  font-size: 10px;
-  font-family: "Tulia-Regular", serif;
+  font-size: 10px; /* Sets a base size for REM units */
+  font-family: "Tulia-Regular", serif; /* Uses Tulia-Regular as the body font */
 }
 
+/* Apply the body font and set a default size */
 body {
   font-family: "Tulia-Regular", serif;
-  font-size: 1.7rem;
+  font-size: 1.7rem; /* Uses REM for scalable font sizing */
 }
 
+/* Style the main headings */
 h1, h2 {
-  font-family: "JosefinSlab-Bold", sans-serif;
-  letter-spacing: 2px;
+  font-family: "JosefinSlab-Bold", sans-serif; /* Uses the bold Josefin Slab font */
+  letter-spacing: 2px; /* Adds spacing between letters for better readability */
 }
 
+/* Center the main heading and set its size */
 h1 {
   font-size: 5rem;
   text-align: center;
 }
 
+/* Define the size for h2 elements */
 h2 {
   font-size: 3.2rem;
 }
 
+/* Set spacing and text styles for paragraphs and lists */
 p, li, ul, ol {
-  line-height: 1.5;
-  letter-spacing: 0.5px;
-  word-spacing: 3px;
-  margin-bottom: 0.5rem;
+  line-height: 1.5; /* Adjusts line height for readability */
+  letter-spacing: 0.5px; /* Adds small letter spacing */
+  word-spacing: 3px; /* Improves word spacing for readability */
+  margin-bottom: 0.5rem; /* Adds spacing below each element */
 }
 
+/* Style unordered and ordered lists */
 ul, ol {
   margin: 1.6rem 0;
-  padding-left: 5rem;
+  padding-left: 5rem; /* Adds indentation */
 }
 
+/* Use square bullets for unordered lists */
 ul {
   list-style-type: square;
 }
 
+/* Use decimal numbers for ordered lists */
 ol {
   list-style-type: decimal;
 }
 
-section h2 +p {
+/* Indent the first paragraph after each h2 heading */
+section h2 + p {
   text-indent: 20px;
 }
 
+/* Default link styling */
 a {
-  outline: none;
-  /* Underlined by default */
-  text-decoration: underline; 
+  outline: none; /* Removes the default outline */
+  text-decoration: underline; /* Ensures links are underlined by default */
 }
 
+/* Define colors for normal and visited links */
 a:link, a:visited {
   color: #a66;
 }
 
+/* Remove underline when the link is focused */
 a:focus {
   text-decoration: none;
 }
 
+/* Remove underline when the link is hovered over */
 a:hover {
   text-decoration: none;
 }
 
+/* Change link color and background when active (clicked) */
 a:active {
   color: white;
   background-color: #a66;
   padding: 2px;
 }
 
+/* Add an external link icon for links that go outside the site */
 a[href*="http"] {
   background: url(external-link-52.png) no-repeat 100% 0;
   background-size: 16px 16px;
   padding-right: 19px;
 }
 
+/* Style the navigation bar */
 nav {
   padding: 2rem;
 }
 
+/* Remove list styles from the navigation menu and apply spacing */
 nav ul {
   list-style-type: none;
   margin: 10px;
   padding: 0;
   display: flex;
-  flex-direction: column; 
-  gap: 1.5rem; 
+  flex-direction: column; /* Stack items vertically */
+  gap: 1.5rem; /* Adds spacing between navigation items */
 }
 
+/* Make navigation items span full width */
 nav li {
   width: 100%;
 }
 
+/* Style navigation links */
 nav li a {
   text-decoration: none;
   display: block;
@@ -164,17 +185,19 @@ nav li a {
   padding: 1.5rem 0;
   text-align: center;
   font-size: 2.5rem;
-  font-family: "Cormorant-Regular", serif;
+  font-family: "Cormorant-Regular", serif; /* Uses a different font for navigation */
   border: 1px solid #a66;
   background-color: white;
   color: #a66;
 }
 
+/* Change background and text color when hovering over a navigation link */
 nav li a:hover {
   background-color: #a66;
   color: white;
 }
 
+/* Adjust appearance when the navigation link is clicked */
 nav li a:active {
   color: white;
   padding: 2px;
