@@ -52,19 +52,19 @@ header, footer {
 }
 
 @font-face {
-  font-family: "Cormorant-regular";
-  src: url("fonts/Cormorant-Regular.otf"), format("opentype");
+  font-family: "Tulia-Regular";
+  src: url("fonts/Tulia_regular.otf"), format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   font-size: 10px;
-  font-family: "Cormorant-Regular", serif;
+  font-family: "Tulia-Regular", serif;
 }
 
 body {
-  font-family: "Cormorant-Regular", serif;
+  font-family: "Tulia-Regular", serif;
   font-size: 1.7rem;
 }
 
