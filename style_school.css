@@ -52,19 +52,19 @@ header, footer {
 }
 
 @font-face {
-  font-family: "Cormorant-Medium";
-  src: url("fonts/Cormorant-Medium.otf"), format("opentype");
+  font-family: "Cormorant-regular";
+  src: url("fonts/Cormorant-Regular.otf"), format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   font-size: 10px;
-  font-family: "Cormorant-Medium", serif;
+  font-family: "Cormorant-Regular", serif;
 }
 
 body {
-  font-family: "Cormorant-Medium", serif;
+  font-family: "Cormorant-Regular", serif;
   font-size: 1.7rem;
 }
 
@@ -84,18 +84,22 @@ h2 {
 
 p, li, ul, ol {
   line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+  margin-bottom: 0.5rem;
 }
 
 ul, ol {
   margin: 1.6rem 0;
-
+  padding-left: 5rem;
 }
 
 ul {
   list-style-type: square;
+}
+
+ol {
+  list-style-type: decimal;
 }
 
 section h2 +p {
@@ -104,6 +108,8 @@ section h2 +p {
 
 a {
   outline: none;
+  /* Underlined by default */
+  text-decoration: underline; 
 }
 
 a:link, a:visited {
@@ -129,3 +135,37 @@ a[href*="http"] {
   padding-right: 19px;
 }
 
+nav {
+  padding: 2rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 1.5rem; 
+}
+
+nav li {
+  width: 100%;
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Cormorant-Regular", serif;
+  border: 1px solid #a66;
+  background-color: white;
+  color: #a66;
+}
+
+nav li a:hover {
+  background-color: #a66;
+  color: white;
+}
