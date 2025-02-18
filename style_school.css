@@ -52,19 +52,20 @@ header, footer {
 }
 
 @font-face {
-  font-family: "Cormorant-Regular";
-  src: url("fonts/Cormorant-Regular.otf"), format("opentype");
+  font-family: "Cormorant-Medium";
+  src: url("fonts/Cormorant-Medium.otf"), format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 html {
   font-size: 10px;
-  font-family: "Cormorant-Regular", serif;
+  font-family: "Cormorant-Medium", serif;
 }
 
 body {
-  font-family: "Cormorant-Regular", serif;
+  font-family: "Cormorant-Medium", serif;
+  font-size: 1.7rem;
 }
 
 h1, h2 {
@@ -81,6 +82,12 @@ h2 {
   font-size: 3.2rem;
 }
 
-p, li {
+p, li, ul, ol {
   line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+section {
+  text-indent: 20px;
 }
