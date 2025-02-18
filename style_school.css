@@ -200,5 +200,5 @@ nav li a:hover {
 /* Adjust appearance when the navigation link is clicked */
 nav li a:active {
   color: white;
-  padding: 2px;
+  padding: 3px;
 }
