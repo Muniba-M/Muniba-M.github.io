@@ -107,3 +107,7 @@ a:focus {
 a:hover {
   text-decoration: none;
 }
+
+a:active {
+  color: red; 
+}
