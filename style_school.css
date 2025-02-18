@@ -86,6 +86,16 @@ p, li, ul, ol {
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  margin: 1.6rem 0;
+
+}
+
+ul {
+  list-style-type: square;
 }
 
 section h2 +p {
@@ -109,7 +119,8 @@ a:hover {
 }
 
 a:active {
-  color: red; 
+  color: red;
+  padding: 2px 4px;
 }
 
 a[href*="http"] {
@@ -117,3 +128,4 @@ a[href*="http"] {
   background-size: 16px 16px;
   padding-right: 19px;
 }
+
