@@ -16,6 +16,9 @@ let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. Whe
 randomize.addEventListener('click', result);
 
 function result() {
+    var newStory = storyText;
+
+    
 
   if(customName.value !== '') {
     const name = customName.value;
