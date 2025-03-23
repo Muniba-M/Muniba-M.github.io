@@ -8,12 +8,20 @@ const overlay = document.querySelector('.overlay');
 const filenames = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 
 /* Declaring the alternative text for each image file */
+const alts = {
+    'pic1.jpg' : "Close up of a human eye",
+    'pic2.jpg' : "Rock which looks like a wave",
+    'pic3.jpg' : "Purple and white flowers",
+    'pic4.jpg' : "Section of wall from a pharoah\'s tomb",
+    'pic5.jpg' : "A butterfly on a leaf"
+}
 
 /* Looping through images */
-
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-newImage.setAttribute('alt', xxx);
-thumbBar.appendChild(newImage);
+for (const filename of filenames){
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', 'images/' + {filename});
+    newImage.setAttribute('alt', alts[filename]);
+    thumbBar.appendChild(newImage);
+}
 
 /* Wiring up the Darken/Lighten button */
