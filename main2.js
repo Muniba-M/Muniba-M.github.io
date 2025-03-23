@@ -19,7 +19,7 @@ const alts = {
 /* Looping through images */
 for (const filename of filenames) {
     const newImage = document.createElement('img');
-    newImage.setAttribute('src', 'images/' + {filename});
+    newImage.setAttribute('src', 'images/' + filename);
     newImage.setAttribute('alt', alts[filename]);
     thumbBar.appendChild(newImage);
     newImage.addEventListener("click", e => {
@@ -30,7 +30,7 @@ for (const filename of filenames) {
 
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener("click", ()=> {
-    const btnClass = btn.getAttribute('Class');
+    const btnClass = btn.getAttribute('class');
     if (btnClass === 'dark') {
         btn.setAttribute("class", 'light');
         btn.textContent = 'Lighten';
