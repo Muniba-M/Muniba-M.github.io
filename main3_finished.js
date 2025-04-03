@@ -28,25 +28,14 @@ class Shape{
 }
 
 class Ball extends Shape {
-    exsits;
+    exists;
 
     constructor(x, y, velX, velY, color, size) {
         super(x, y, velX, velY);
         this.color = color;
         this.size = size;
-        this.exsits = true;
+        this.exists = true;
     }
-}
-
-class Ball {
-  constructor(x, y, velX, velY, color, size) {
-    this.x = x;
-    this.y = y;
-    this.velX = velX;
-    this.velY = velY;
-    this.color = color;
-    this.size = size;
-  }
 
   draw() {
     ctx.beginPath();
