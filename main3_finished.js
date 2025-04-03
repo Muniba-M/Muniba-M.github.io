@@ -67,7 +67,7 @@ class Ball extends Shape {
 
     collisionDetect() {
         for (const ball of balls) {
-            if (!(this === ball) && ball.exsits === true) {
+            if (!(this === ball) && ball.exists === true) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
@@ -131,6 +131,20 @@ class EvilCircle extends Shape {
         }
 
     }
+    collisionDetect() {
+        for (const ball of balls) {
+            if (ball.exists) {
+                const dx = this.x - ball.x;
+                const dy = this.y - ball.y;
+                const distance = Math.sqrt(dx * dx + dy * dy);
+
+                if (distance < this.size + ball.size) {
+                    ball.exists = false;
+
+                }
+            }
+        }
+    }
 }
 const balls = [];
 
@@ -149,6 +163,7 @@ while (balls.length < 25) {
 
   balls.push(ball);
 }
+
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
