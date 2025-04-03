@@ -107,9 +107,10 @@ class EvilCircle extends Shape {
   
     draw() {
      ctx.beginPath();
-     ctx.fillStyle = this.color;
+     ctx.lineWidth();
+     ctx.strokeStyle = this.color;
      ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
-     ctx.fill();
+     ctx.stroke();
     }
 }
 const balls = [];
