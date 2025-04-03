@@ -23,6 +23,7 @@ function randomRGB() {
 // Object to represent a ball
 class Ball {
 
+    // Class properties
     x;
     y;
     velX;
@@ -30,6 +31,7 @@ class Ball {
     color;
     size;
 
+    // Constructors
     constructor(x, y, velX, velY, color, size) {
         this.x = x;
         this.y = y;
@@ -39,6 +41,7 @@ class Ball {
         this.size = size;
     }
 
+    // Drawing the ball
     draw() {
         ctx.beginPath();
         ctx.fillStyle = this.color;
@@ -46,6 +49,7 @@ class Ball {
         ctx.fill();
     }
 
+    // Moving the ball
     update() {
         if ((this.x + this.size) >= width) {
           this.velX = -(this.velX);
@@ -67,13 +71,17 @@ class Ball {
         this.y += this.velY;
     }
 
+    //Checks for collisions between balls and changes their colors if they collide
     collisionDetect() {
         for (const ball of balls) {
+
+            // Ensure a ball doesn't check collision with itself
             if (this !== ball) {
                 const dx = this.x - ball.x;
                 const dy = this.y - ball.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
-      
+                
+                // If the distance is less than the sum of the two ball sizes, a collision occurs
                 if (distance < this.size + ball.size) {
                     ball.color = this.color = randomRGB();
                 }
@@ -82,6 +90,7 @@ class Ball {
     }      
 }
 
+// Array to store all balls
 const balls = [];
 
 while (balls.length < 25) {
@@ -97,6 +106,7 @@ while (balls.length < 25) {
     size,
   );
 
+  // Add the new ball to the array
   balls.push(ball);
 }
 
@@ -110,7 +120,9 @@ function loop() {
     ball.collisionDetect();
   }
 
+  // Call loop again to create animation (frame-by-frame update)
   requestAnimationFrame(loop);
 }
 
+// Start the animation
 loop();
