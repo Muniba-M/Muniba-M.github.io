@@ -156,8 +156,6 @@ class EvilCircle extends Shape {
     }
 }
 
-const circle = new EvilCircle(10, 10);
-
 const balls = [];
 
 while (balls.length < 25) {
@@ -176,6 +174,7 @@ while (balls.length < 25) {
   balls.push(ball);
 }
 
+const circle = new EvilCircle(10, 10);
 
 function loop() {
   ctx.fillStyle = "rgba(0, 0, 0, 0.25)";
