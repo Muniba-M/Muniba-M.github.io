@@ -41,7 +41,7 @@ class Ball extends Shape {
         this.exists = true;
         ballCount += 1;
 
-        scoreCounter.textContent = 'Ball count:' + {ballCount};
+        scoreCounter.textContent = 'Ball count:' + ballCount;
     }
 
     draw() {
@@ -148,7 +148,7 @@ class EvilCircle extends Shape {
                     ball.exists = false;
                     ballCount -= 1;
 
-                    scoreCounter.textContent = 'Ball count:' + {ballCount};
+                    scoreCounter.textContent = 'Ball count:' + ballCount;
 
                 }
             }
