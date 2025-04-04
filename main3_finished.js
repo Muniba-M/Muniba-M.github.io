@@ -3,6 +3,8 @@
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
+const scoreCounter = document.querySelector("p");
+
 const width = (canvas.width = window.innerWidth);
 const height = (canvas.height = window.innerHeight);
 
@@ -17,6 +19,8 @@ function random(min, max) {
 function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
+
+let ballCount = 0;
 
 class Shape{
     constructor(x, y, velX, velY) {
@@ -35,6 +39,9 @@ class Ball extends Shape {
         this.color = color;
         this.size = size;
         this.exists = true;
+        ballCount += 1;
+
+        scoreCounter.textContent = 'Ball count:' + {ballCount};
     }
 
     draw() {
@@ -107,7 +114,6 @@ class EvilCircle extends Shape {
   
     draw() {
      ctx.beginPath();
-     ctx.lineWidth();
      ctx.strokeStyle = this.color;
      ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
      ctx.stroke();
@@ -140,6 +146,9 @@ class EvilCircle extends Shape {
 
                 if (distance < this.size + ball.size) {
                     ball.exists = false;
+                    ballCount -= 1;
+
+                    scoreCounter.textContent = 'Ball count:' + {ballCount};
 
                 }
             }
