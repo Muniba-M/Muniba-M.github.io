@@ -217,5 +217,5 @@ function loop() {
     requestAnimationFrame(loop);
 }
 
-// Start the game loop
+// Start the loop for playing the game
 loop();
