@@ -18,7 +18,7 @@ html, body {
   
   /* || typography */
   
-  font[size="7"], font[size="6"], font[size="5"] {
+  h1, h2, h3 { /* Changing fonts to h1, h2, h3 */
     font-family: 'Sonsie One', cursive;
     color: #2a2a2a;
   }
@@ -28,19 +28,19 @@ html, body {
     color: #2a2a2a;
   }
   
-  h1 {
+  h1 {  /* Changing font = 7 to h1 */
     font-size: 4rem;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 10px black;
   }
   
-  h2 {
+  h2 {  /* Changing font = 6 to h2 */
     font-size: 3rem;
     text-align: center;
   }
   
-  h3 {
+  h3 { /* Changing font = 5 to h3 */
     font-size: 2.2rem;
   }
   
@@ -52,7 +52,7 @@ html, body {
   /* || header layout */
   
   nav, article, footer, .secondary {
-    background-color: white;
+    background-color: white; /* Changing green to white for readibility */
   }
   
   article, footer, .secondary {
@@ -63,7 +63,7 @@ html, body {
     margin-right: 10px;
   }
   
-  nav {
+  nav { /* Changing div[class=nav'] to nav with all possibilities */
     height: 50px;
     background-color: ff80ff;
     display: flex;
