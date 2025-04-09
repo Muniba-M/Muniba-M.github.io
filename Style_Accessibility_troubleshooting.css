@@ -19,6 +19,7 @@ html, body {
   /* || typography */
   
   h1, h2, h3 { /* Changing fonts to h1, h2, h3 */
+    
     font-family: 'Sonsie One', cursive;
     color: #2a2a2a;
   }
