@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -7,7 +7,7 @@
     <title>Accessibility assessment</title>
 
     <!-- Link to Google Fonts for typography -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Sonsie+One&display=swap" rel="stylesheet">
 
     <!-- Link to external stylesheet for additional styles -->
     <link rel="stylesheet" href="Style_Accessibility_troubleshooting.css">
@@ -68,8 +68,9 @@
         
         <p>Bears can also be classified in terms of their habitat — both large and medium bears are just as at home in urban areas as they are in the countryside. Different habitats encourange different behaviour however, as you'll find out below. The below table also gives you some useful facts about bears.</p>
         
-        <!--makes the table of data more screenreader friendly by including a summary attribute-->
-        <table summary="Useful statistics about wild and urban bears">
+        <!--makes the table of data more screenreader friendly by including caption tags-->
+        <table>
+            <caption>Useful statistics about wild and urban bears</caption>
           <thead>
             <tr>
                 <!-- changing the row from <td> to <th> elements and adding column scope-->
@@ -132,7 +133,7 @@
           <source src="media/bear.ogg" type="audio/ogg">
 
           <!-- Including a link using href attribute for audio file for older browser support-->
-          <p>It looks like your browser doesn't support HTML5 audio players.Here is a <a href="bear.mp3">direct link to the audio file</a> instead.</p></p>
+          <p>It looks like your browser doesn't support HTML5 audio players.Here is a <a href="bear.mp3">direct link to the audio file</a> instead.</p>
         </audio>
 
         <aside>
